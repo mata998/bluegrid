@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  api:
+    image: mata998/bluegrid
+    ports:
+      - 4000:4000
+    environment:
+      - REST_TEST_URL
+    restart: always
